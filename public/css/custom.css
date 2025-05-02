@@ -1,0 +1,112 @@
+:root {
+    --primary-color: #f7de05;
+    --secondary-color: #283593;
+    --tertiary-color: #aa0ae9;
+}
+
+/* بهینه‌سازی گرادیانت */
+/* استفاده از نقاط توقف رنگ بیشتر و توابع easing */
+.gradient-bg {
+    background: linear-gradient(to right, #a7c6ee 0%, #6a99e0 25%, #2575fc 50%, #6a99e0 75%, #a7c6ee 100%);
+    transition: background 0.5s ease-in-out;
+}
+
+
+/* transition به آیکون‌های شبکه‌های اجتماعی */
+.fab {
+    transition: color 0.3s ease;
+}
+
+.fab:hover {
+    color: var(--primary-color);
+}
+
+/* سایه به navbar */
+nav {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.card-shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* navbar logo */
+.logo-container {
+    width: 150px;
+    /* عرض دلخواه لوگو */
+    height: 100%;
+    /* ارتفاع لوگو برابر با ارتفاع نوار ناوبری */
+    /* transform: translateX(-50px); */
+    /* تنظیم موقعیت لوگو به سمت چپ */
+}
+
+.logo {
+    height: 150%;
+    /* ارتفاع لوگو برابر با ارتفاع container */
+    object-fit: contain;
+    /* حفظ تناسب ابعاد لوگو */
+}
+
+/* استایل فوتر */
+.bg-gradient-to-b {
+    background-image: linear-gradient(to bottom, #043275, #011247);
+}
+
+.coachItems {
+    background-image: url('https://merehead.com/blog/wp-content/uploads/boliviainteligente-37WxvlfW3to-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.gallerySwiper .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.gallerySwiper .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.gallerySwiper .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.miniSwiper {
+    /* width: 300px;*/
+    height: 300px;
+    padding: 10px;
+}
+
+.miniSwiper .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.miniSwiper .swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+.image {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.image.show {
+    opacity: 1;
+    transform: translateY(0);
+}
