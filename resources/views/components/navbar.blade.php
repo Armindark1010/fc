@@ -6,7 +6,7 @@
         <div class="container  mx-auto  px-4 flex justify-between items-center">
             <div class="xl:block hidden">
                 <ul class="flex space-x-6 ">
-                    <li><a href="#" class=" px-2 text-white hover:text-yellow-400 opacity-90 hover:opacity-100">صفحه
+                    <li><a href="{{route('home')}}" class=" px-2 text-white hover:text-yellow-400 opacity-90 hover:opacity-100">صفحه
                             اصلی</a>
                     </li>
                     <li><a href="{{ route('about')}}"
@@ -47,14 +47,14 @@
     </nav>
     <div class="menu-toggle fixed bottom-0 left-0 w-full bg-blue-900 bg-opacity-90 md:hidden z-50">
         <div class="flex justify-around py-2">
-            <a href="#" class="text-white hover:text-yellow-400">
+            <a href="{{route('home')}}" class="text-white hover:text-yellow-400">
                 <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
                     <path
                         d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9zm8-5.5L4.5 9H8v8H5v2h14v-2h-3V9h3.5L12 3.5z" />
                 </svg>
                 <span class="block text-xs">خانه</span>
             </a>
-            <a href="#about" class="text-white hover:text-yellow-400">
+            <a href="{{route('about')}}" class="text-white hover:text-yellow-400">
                 <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
                     <path
                         d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22C7.97 14.43 9.87 14 12 14c2.13 0 4.03.43 5.4 2.98-1.29 1.94-3.5 3.22-6 3.22z" />

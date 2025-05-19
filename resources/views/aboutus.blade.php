@@ -1,9 +1,8 @@
 @extends('layouts.masterpage')
 @section('content')
     <div>
-        <!-- عنوان اصلی با افکت مدرن -->
         <div class="text-center mb-16 relative">
-            <h1 class="text-5xl font-bold text-gray-800 mb-4 transform hover:scale-105 transition duration-500">مدرسه فوتبال کاویان</h1>
+            <h1 class="text-5xl font-bold text-gray-800 mb-4">مدرسه فوتبال کاویان</h1>
             <div class="w-24 h-2 bg-yellow-500 mx-auto rounded-full"></div>
             <p class="text-xl text-gray-600 mt-6">پرورش استعدادهای فوتبال نسل آینده</p>
         </div>

@@ -110,3 +110,38 @@ nav {
     opacity: 1;
     transform: translateY(0);
 }
+
+        
+.card {
+    transition: all 0.3s ease;
+    flex: 0 0 calc(33.333% - 1rem); /* 3 کارت در هر ردیف با فاصله */
+    margin: 0 0.5rem;
+    box-sizing: border-box;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.slider-container {
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.slider-container::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 0 0 calc(50% - 1rem); /* 2 کارت در موبایل */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex: 0 0 calc(100% - 1rem); /* 1 کارت در موبایل کوچک */
+    }
+}
